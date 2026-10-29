@@ -1,38 +1,64 @@
-# Task 3 — Automated File Organizer & Cleanup Utility
+Datheon Python Internship — Tasks 1, 2 & 3
 
-**Program:** `organizer.py`  
-**Runtime:** Python 3.10+ (standard library only)
+Name: Maneesh Kushwaha 
+Language: Python 3
 
-## Objective
-Organize the files in one selected directory into folders based on file extensions.
+Task 1: Hangman Word Guessing Game
 
-## Features
-- Categorizes images, videos, documents, archives, code, audio and other files.
-- Creates category folders only when needed.
-- Handles filename collisions by adding `_1`, `_2`, etc.
-- Catches permission and filesystem errors and reports them.
-- Provides a dry-run mode to preview changes.
-- Moves files; it does not delete them.
-- Prints an execution summary.
+A console-based game where users guess a hidden word within six incorrect attempts.
 
-## Preview changes first
-```bash
-python organizer.py "C:/Users/YourName/Downloads" --dry-run
-```
+Features:
 
-## Run the organizer
-```bash
-python organizer.py "C:/Users/YourName/Downloads"
-```
-The program asks for confirmation before moving files.
+- Random word selection
+- ASCII Hangman display
+- Tracks guessed letters
+- Win and lose messages
 
-For a scripted run where you have already checked the target directory:
-```bash
-python organizer.py "C:/Users/YourName/Downloads" --yes
-```
+Run:
 
-## Test safely
-Create a temporary test folder containing copies of a few files (for example, `.jpg`, `.pdf`, `.py`, `.zip`, and an unknown extension). Run `--dry-run` first, then run normally against the test folder.
+python hangman.py
 
-## Scope
-Only files directly inside the selected directory are organized. Existing subdirectories are left untouched. The program does not recursively traverse folders or delete files.
+Task 2: Stock Portfolio Performance Tracker
+
+A Python program that calculates stock portfolio value and profit or loss.
+
+Features:
+
+- Stock symbols, purchase prices and quantities
+- Current-value and profit/loss calculations
+- CSV report generation
+- Optional live prices using yfinance
+
+Run:
+
+python portfolio.py
+
+Note: The provided sample prices are for demonstration only.
+
+Task 3: Automated File Organizer
+
+A Python utility that organizes files into folders according to file extensions.
+
+Features:
+
+- Organizes images, documents, videos, archives and code
+- Creates folders automatically
+- Handles duplicate filenames
+- Includes dry-run mode
+- Reports file operation errors
+
+Run:
+
+python organizer.py "path/to/folder" --dry-run
+
+Remove "--dry-run" to perform the file moves.
+
+Requirements
+
+- Python 3.10 or newer
+- Standard Python libraries
+- Optional: "yfinance" for live stock prices
+
+Conclusion
+
+These three projects demonstrate Python programming, string manipulation, calculations, CSV handling, and filesystem automation.
